@@ -2,6 +2,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Match from '../screens/Match/Match';
 import MatchDetail from '../screens/Match/MatchDetail';
 import TeamDetail from '../screens/Match/TeamDetail';
+import React from 'react';
 
 const Stack = createStackNavigator();
 

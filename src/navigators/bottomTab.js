@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 export default function BottomTab() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={LoginStack} />
+      <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Match" component={MatchStack} />
       <Tab.Screen name="Statistic" component={StatisticStack} />
       <Tab.Screen name="UserProfile" component={UserProfile} />
