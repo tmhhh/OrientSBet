@@ -1,4 +1,5 @@
 import {createStackNavigator} from '@react-navigation/stack';
+import React from 'react';
 import Match from '../screens/Match/Match';
 import MatchDetail from '../screens/Match/MatchDetail';
 import TeamDetail from '../screens/Match/TeamDetail';
