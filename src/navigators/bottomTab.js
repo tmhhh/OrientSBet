@@ -1,12 +1,9 @@
-import {Text, View} from 'react-native';
-import React, {Component} from 'react';
-import LoginStack from './loginStack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import React from 'react';
+import Home from '../screens/Home';
+import UserProfile from '../screens/UserProfile';
 import MatchStack from './matchStack';
 import StatisticStack from './statisticStack';
-import UserProfile from '../screens/UserProfile';
-import Home from '../screens/Home';
-
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
 
