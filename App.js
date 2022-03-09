@@ -8,6 +8,7 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   SafeAreaView,
   ScrollView,
