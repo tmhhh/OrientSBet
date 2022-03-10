@@ -14,6 +14,7 @@ import SearchBar from '../components/SearchBar';
 import colors from '../../assets/color';
 import banner from '../../assets/images/banner.png';
 import person from '../../assets/images/person.png';
+import CategoryButton from '../components/CategoryButton';
 export default function Home() {
   return (
     <View style={style.homeScreenContainer}>
@@ -61,14 +62,8 @@ export default function Home() {
       <Text style={style.largeTitle}>Top Events</Text>
 
       <View style={style.categoriesContainer}>
-        <View style={style.categoryContainer}>
-          <Ionicons color={colors.white} size={20} name="football" />
-          <Text style={style.smallTitle}>Football</Text>
-        </View>
-        <View style={[style.categoryContainer, {marginLeft: 10}]}>
-          <Ionicons color={colors.white} size={20} name="basketball" />
-          <Text style={style.smallTitle}>NBA</Text>
-        </View>
+        <CategoryButton icon="football" title="Football" />
+        <CategoryButton icon="basketball" title="NBA" />
       </View>
       <ScrollView>
         <MatchCard />
@@ -127,20 +122,21 @@ const style = StyleSheet.create({
   categoriesContainer: {
     flexDirection: 'row',
     height: 37,
+    marginLeft: -10,
     marginBottom: 19,
   },
-  categoryContainer: {
-    // padding: 14,
-    backgroundColor: colors.black,
-    borderRadius: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 10,
-  },
-  smallTitle: {
-    marginLeft: 5,
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.white,
-  },
+  // categoryContainer: {
+  //   // padding: 14,
+  //   backgroundColor: colors.black,
+  //   borderRadius: 10,
+  //   flexDirection: 'row',
+  //   alignItems: 'center',
+  //   paddingHorizontal: 10,
+  // },
+  // smallTitle: {
+  //   marginLeft: 5,
+  //   fontSize: 13,
+  //   fontWeight: '700',
+  //   color: colors.white,
+  // },
 });

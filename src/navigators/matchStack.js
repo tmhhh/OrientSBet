@@ -9,7 +9,14 @@ const Stack = createStackNavigator();
 export default function MatchStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Match" component={Match} />
+      <Stack.Screen
+        name="Match"
+        component={Match}
+        options={{headerShown: false}}
+        // screenOptions={() => ({
+        //   headerShown: false,
+        // })}
+      />
       <Stack.Screen name="MatchDetail" component={MatchDetail} />
       <Stack.Screen name="TeamDetail" component={TeamDetail} />
     </Stack.Navigator>
