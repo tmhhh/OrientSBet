@@ -8,7 +8,11 @@ const Stack = createStackNavigator();
 export default function StatisticStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Statistic" component={Statistic} />
+      <Stack.Screen
+        name="Statistic"
+        component={Statistic}
+        options={{headerShown: false}}
+      />
       <Stack.Screen name="StatisticProfile" component={StatisticProfile} />
     </Stack.Navigator>
   );
