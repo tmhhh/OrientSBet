@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     margin: 6
   },
-  content:{},
   name:{
     fontSize: 14,
     color: colors.darkGrey,

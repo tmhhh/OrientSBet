@@ -12,8 +12,8 @@ export default function BottomTab() {
     <Tab.Navigator>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Match" component={MatchStack} options={{headerShown: false}}/>
-      <Tab.Screen name="Statistic" component={StatisticStack} />
-      <Tab.Screen name="UserProfile" component={UserProfile} />
+      <Tab.Screen name="Statistic" component={StatisticStack} options={{headerShown: false}}/>
+      <Tab.Screen name="UserProfile" component={UserProfile} options={{headerShown: false}}/>
     </Tab.Navigator>
   );
 }
