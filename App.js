@@ -6,8 +6,8 @@ import BottomTab from './src/navigators/bottomTab';
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <LoginStack /> */}
-      <BottomTab />
+      <LoginStack />
+      {/* <BottomTab /> */}
     </NavigationContainer>
   );
 }

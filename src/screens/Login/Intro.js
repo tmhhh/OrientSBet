@@ -1,10 +1,29 @@
-import React from 'react';
-import {Text, View} from 'react-native';
+import React, {useEffect} from 'react';
+import {ImageBackground, StyleSheet, View} from 'react-native';
+const image = require('../../../assets/images/Welcome.png');
 
-export default function Intro() {
+export default function Intro({navigation}) {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Login');
+    }, 3000);
+    return;
+  }, []);
+
   return (
-    <View>
-      <Text>Login</Text>
+    <View style={styles.container}>
+      <ImageBackground source={image} style={styles.image} />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  image: {
+    resizeMode: 'cover',
+    width: '100%',
+    height: '100%',
+  },
+});
